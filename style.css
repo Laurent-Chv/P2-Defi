@@ -1,26 +1,131 @@
 /* GENERAL SETTINGS */
 body{
    font-family: 'Roboto', sans-serif;
+   width: 100%;
+   max-width: 1200px;
+   margin: 7px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 
 /* HEADER */
 header{
    display: flex;
+   flex-direction: row;
    justify-content: space-between;
 }
 
-header nav{
-   display: flex;
-   flex-direction: row;
-}
-
-header ul{
+nav{
    display: flex;
    align-items: center;
-   list-style: none;
 }
 
-header li{
-   margin-left: 20px;
+nav ul{
+   display: flex;
+}
+
+nav li{
+   padding-left: 30px;
+   list-style: none;
    font-weight: bold;
 }
+
+/* BANNER SECTION */
+section{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+#banner{
+   height: 450px;
+   position: relative;
+}
+
+#banner-img{
+   width: 100%;
+   height: 100%;
+
+   position: absolute;
+}
+
+#img-banner{
+   height: 450px;
+   width: 100%;
+   object-fit: cover;
+}
+
+#banner-content{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#banner-content img{
+   width: 200px;
+}
+
+h1{
+   color: #fff;
+}
+
+/* MAIN CONTENT SECTION */
+#slogan, #articles-container{
+   max-width: 800px;
+   margin-top: 30px
+}
+
+#slogan p{
+   color: rgb(87, 87, 87);
+   font-size: 22px;
+   font-weight: bold;
+}
+
+#articles-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+#articles-container article{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 20px;
+}
+
+h2{
+   text-transform: uppercase;
+}
+
+.article p{
+   font-size: 14px;
+   font-weight: bold;
+}
+
+#citation-container{
+   max-width: 600px;
+   margin-top: 50px;
+}
+
+#citation{
+   color: rgb(87, 87, 87);
+   font-size: 22px;
+   font-weight: bold;
+}
+
+#citation-author{
+   font-weight: normal;
+   font-size: 16px;
+   margin-top: 0;
+}
+
+
+/* FOOTER */
